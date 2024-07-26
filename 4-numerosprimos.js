@@ -8,8 +8,8 @@ se ele é divisível por qualquer número entre 2 e a raiz quadrada do número.
 Você pode usar a função sqrt() da biblioteca Math para calcular isso.
 
 Programa desenvolvido por:
- - Aluno 1
- - Aluno 2
- - Aluno 3
- - Aluno 4
+ - Adriane	
+ - Andressa
+ - Bruno
+ - Joshua
 */

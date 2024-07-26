@@ -8,8 +8,15 @@ Um número é ímpar se o resto da divisão desse número por 2 é diferente de 
 array contendo apenas os números que atendem a essa condição.
 
 Programa desenvolvido por:
- - Aluno 1
- - Aluno 2
- - Aluno 3
- - Aluno 4
+ - Adriane
+ - Andressa
+ - Bruno
+ - Joshua
 */
+
+function getOddNumbers(array){
+    return array.filter( num => num % 2 !== 0);
+}
+    const numeros = [27, 10, 3, 0, 20, 5, 6]
+    const impares = getOddNumbers(numeros); 
+    console.log(impares)
