@@ -1,47 +1,39 @@
 # Maratona de Funções
-
-Para esta atividade, cada equipe deve clonar esse repositório em seus computadores, em seguida, renomear o diretório com o nome do seu time (ex: brunonaoajuda-funcoes), e desenvolver as funções propostas em seus respectivos arquivos.
-
-Alguns exercícios requerem o uso de funções e fórmulas que não vimos em aula, mas mesmo assim, é fornecida uma dica de resolução. É importante que a equipe pesquise e teste o funcionamento das funções fornecidas, e estude sobre o assunto antes de começar a desenvolver a função.
-
-> Ou seja, a pesquisa faz parte da atividade.
-
-Finalmente, será feito um sorteio onde cada equipe deve demonstrar a resolução de uma das funções para a turma. A explicação deve cobrir o funcionamento da função, a pesquisa feita, e como ela foi desenvolvida.
-
-O arquivo extra.js contém funções extras que podem ser desenvolvidas para ganhar pontos extras, para quem quiser ir além, não é obrigatoria.
-
-# Pontuação
-
-* As equipes serão recompensadas com 5 estrelas por arquivo correto.
-* A primeira equipe que desenvolver todos os programas propostos, e todas as funções estiverem corretas, será recompensada com 15 estrelas bônus.
-* Será feito um sorteio, cada equipe vai explicar o código de uma das funções para a turma. A equipe que explicar a função corretamente ganha 5 estrelas bônus. A melhor explicação ganha 15 estrelas bônus.
-
-# Entrega
-
-Depois que a equipe terminar de desenvolver as funções, crie um arquivo comprimido (zip) com os arquivos da atividade, e um dos integrantes da equipe entrega no classroom esse arquivo zip.
-
-Não se esqueça de colocar como comentário no código os integrantes da equipe que ajudaram no processo de resolução.
-
-```javascript
-/*
-Crie uma função ...
-
-Programa desenvolvido por:
- - Fulano de Tal
- - Ciclano de Todos
- - Percloreto de Calcio
- - Percloreto Ferroso
-*/
-
-function nomeDaFuncao() {
-    // resolucao
-    return resposta
-}
-
-// Se você pesquisou algo para a resolucão deste problema, coloque a fonte aqui
+###  5 - Função de números ímpares 
+```
+function getOddNumbers(array){
+    return array.filter( num => num % 2 !== 0); 
+} 
 ```
 
-# Extras
 
-* A equipe que desenvolver um arquivo README.md explicando cada funcão ganha uma estrela por função explicada.
-* A equipe que fizer a entrega em um repositório do GitHub, usando fork, e branches para cada resolução ganha 15 estrelas extras.
+Função de Callback, ou seja, é uma função que é passada como argumento para outra função e é chamada (ou "executada") dentro dessa função.
+
+```num => num % 2 !== 0``` é uma função de callback utilizada pelo filter.
+
+```num``` é um parâmetro que representa um elemento individual do array.
+
+```num % 2``` calcula o resto da divisão do número num por 2.
+
+```num % 2 !== 0``` verifica se o resto não é igual a 0.
+
+Se o resto é diferente de 0, significa que num é um número ímpar.
+
+Se o resto é 0, significa que num é um número par.
+
+Retorno da Função filter:
+O método filter aplica a função de callback a cada elemento do array e inclui no novo array apenas aqueles elementos para os quais a função de callback retorna true.
+Portanto, apenas os números ímpares passam pela condição e são incluídos no novo array.
+
+
+```const numeros = [27, 10, 3, 0, 20, 5, 6] ```
+
+Cria um array chamado números com seus valores
+    
+```const impares = getOddNumbers(numeros);```
+
+    
+ Chama a função ```getOddNumbers``` passando ```numeros``` como argumento e retorna um vetor contendo apenas números ímpares.
+
+```console.log(impares)```
+    Imprime o vetor com os números ímpares.

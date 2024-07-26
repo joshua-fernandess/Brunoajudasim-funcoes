@@ -15,3 +15,17 @@ Programa desenvolvido por:
  - Bruno
  - Joshua
 */
+
+ function countVowels(string){
+    const vowels ='aeiouAEIOU';
+    let contador = 0; 
+    for (let i =0; i < string.length; i++){ 
+        if (vowels.includes(string[i])){ 
+            contador++; 
+        }
+    }
+    
+    return contador;
+}
+
+(console.log(countVowels("O Bruno sempre ajuda :)"))); 
