@@ -125,3 +125,26 @@ O método filter usa essa função de callback para decidir se um número deve s
 (console.log(countVowels("O Bruno sempre ajuda :)")));
 ``` 
 Imprime o número de vogais que a string "O Bruno sempre ajuda :)" contém, chamando a função countVowels que faz a contagem das vogais dessa string e retorna seu total.
+
+### 8 - Função de Triângulos
+```javascript
+function drawTriangle(n) {
+    for (let i = 1; i <= n; i++) {
+        console.log('*'.repeat(i));
+    }
+}
+```
+
+* ```for (let i = 1; i <= n; i++)``` utilizamos o laço de repetição ```for``` que inicia um loop que começa com i igual a 1 e continua até i ser igual a n, que representa a altura do triângulo.
+* A cada iteração, i é incrementado em 1.
+* ```'*'.repeat(i)``` cria uma string que consiste em i asteriscos.
+
+    O método ```repeat()``` repete o caractere * o número de vezes desejado
+* ```console.log('*'.repeat(i));``` imprime essa string no console. 
+* Cada iteração do loop imprimirá uma nova linha no console com o número apropriado de asteriscos.
+
+#### Exemplo de uso:
+```drawTriangle(3)``` - chama a função drawTriangle e como já há um console.log dentro da função imprime diretamente o triângulo. 
+
+Referência:
+[Youtube](https://www.youtube.com/watch?v=hpgXr4B9eC)

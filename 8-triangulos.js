@@ -13,3 +13,13 @@ Programa desenvolvido por:
  - Bruno
  - Joshua
 */
+
+function drawTriangle(n) {
+    for (let i = 1; i <= n; i++) {
+        console.log('*'.repeat(i));
+    }
+    
+}
+
+drawTriangle(3)
+

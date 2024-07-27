@@ -8,3 +8,12 @@ Programa desenvolvido por:
  - Bruno
  - Joshua
 */
+
+function sumTwoNumbers(numeros){
+    let soma = numeros.reduce((acumlador,valorAtual) => acumlador + valorAtual, 0)
+    return soma;
+}
+
+let numeros = [15, 25, 35, 45, 55, 65];
+let soma = sumTwoNumbers(numeros);
+console.log(soma);
