@@ -94,7 +94,7 @@ O método filter usa essa função de callback para decidir se um número deve s
 * ```console.log(impares)```
     Imprime o vetor com os números pares.
 
-### Função para contar vogais
+### 7 - Função para contar vogais
 ```javascript
  function countVowels(string){
     const vowels ='aeiouAEIOU';
