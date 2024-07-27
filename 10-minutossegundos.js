@@ -8,3 +8,11 @@ Programa desenvolvido por:
  - Bruno
  - Joshua
 */
+
+function minutesToSeconds(minutos){
+    segundos = minutos * 60;
+    return segundos;
+}
+
+console.log(minutesToSeconds(5) + ' segundos');
+console.log(minutesToSeconds(20) + ' segundos');

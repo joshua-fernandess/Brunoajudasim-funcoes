@@ -12,3 +12,15 @@ Programa desenvolvido por:
  - Bruno
  - Joshua
 */
+
+function alphabeticalOrder(string){
+    let vetorString = string.split('');
+    vetorString.sort();
+    vetorOrdem = vetorString.join('');
+    return vetorString;
+}
+
+console.log(alphabeticalOrder("adriane")); 
+console.log(alphabeticalOrder("bruno"));       
+console.log(alphabeticalOrder("andressa"));  
+console.log(alphabeticalOrder("joshua"));     

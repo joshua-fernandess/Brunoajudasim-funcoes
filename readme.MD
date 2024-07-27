@@ -1,22 +1,23 @@
 # Maratona de Funções
-###  5 - Função de números ímpares 
+### 1 - Função de maior número
+
+### 2 - Função saudar usuário
+
+### 3 - Função string reversa
+
+### 4 - Função números primos
+
+### 5 - Função de números ímpares 
 ```javascript
 function getOddNumbers(array){
     return array.filter(num => num % 2 !== 0); 
 } 
 ```
-Definição da Função:
-
 A função getOddNumbers é definida para aceitar um parâmetro chamado array, que se espera ser um array de números.
 
-Uso do Método filter:
+O método filter é usado para criar um novo array contendo apenas os elementos que passam em uma determinada condição. 
 
-O método filter é usado para criar um novo array contendo apenas os elementos que passam em uma determinada condição. A condição é especificada por uma função de callback. Função callback é uma função que é passada como argumento para outra função e é chamada (ou "executada") dentro dessa função.
-
-Retorno da Função filter:
-
-O método filter aplica a função de callback a cada elemento do array e inclui no novo array apenas aqueles elementos para os quais a função de callback retorna true.
-Portanto, apenas os números ímpares passam pela condição e são incluídos no novo array.
+A condição é especificada por uma função de callback. Função callback é uma função que é passada como argumento para outra função e é chamada (ou "executada") dentro dessa função.
 
 Função de callback no método filter:
 
@@ -62,7 +63,7 @@ function getEvenNumbers(array){
 
 A função ```getEvenNumbers``` aceita um argumento chamado array, que é um array de números.
 
-**Método filter:** O método filter é utilizado para criar um novo array contendo apenas os elementos que atendem a uma condição específica. Nesse caso, a condição é definida por uma função de callback.
+O método filter é utilizado para criar um novo array contendo apenas os elementos que atendem a uma condição específica. Nesse caso, a condição é definida por uma função de callback.
 
 **Função de Callback num => num % 2 == 0:**
 
@@ -148,3 +149,55 @@ function drawTriangle(n) {
 
 Referência:
 [Youtube](https://www.youtube.com/watch?v=hpgXr4B9eC)
+ 
+### 9 - Função de soma
+### 10 - Função de converter minutos para segundos
+
+``` javascript 
+function minutesToSeconds(minutos){
+    segundos = minutos * 60;
+    return segundos;
+}
+```
+* ``` segundos = minutos * 60; ``` Convertemos minutos para segundos multiplicando por 60.
+
+* ``` return segundos; ``` Retorna o valor em segundos
+
+#### Exemplo de uso: 
+```javascript 
+console.log(minutesToSeconds(5) + ' segundos');
+console.log(minutesToSeconds(20) + ' segundos');
+```
+Chama a função minutesToSeconds e imprime o valor já convertido de minutos para segundos. 
+
+### 11 - Função média de um array
+### 12 - Função ordem alfabética
+
+```javascript 
+function alphabeticalOrder(string){
+    let vetorString = string.split('');
+    vetorString.sort();
+    vetorOrdem = vetorString.join('');
+    return vetorString;
+}
+```
+* ```let vetorString = string.split('');```
+Utilizamos o método split para converter a string em um array de caracteres.
+* ```vetorString.sort();``` Utilizamos  o método sort para ordenar os caracteres. 
+* ```vetorOrdem = vetorString.join('');``` Utilizamos o método join para juntar os caracteres em uma nova string.
+
+
+#### Exemplo de uso:
+``` javascript
+
+console.log(alphabeticalOrder("adriane")); 
+console.log(alphabeticalOrder("bruno"));       
+console.log(alphabeticalOrder("andressa"));  
+console.log(alphabeticalOrder("joshua"));  
+```
+Chama a função alphabeticalOrder e imprime os caracteres das strings já de forma ordenada.
+
+
+
+#### 💻 Devs: 
+**Bruno, Adriane, Joshua, Andressa.**
