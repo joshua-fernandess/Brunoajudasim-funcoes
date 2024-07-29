@@ -151,6 +151,25 @@ Referência:
 [Youtube](https://www.youtube.com/watch?v=hpgXr4B9eC)
  
 ### 9 - Função de soma
+``` javascript
+function sumTwoNumbers(numeros){
+    let soma = numeros.reduce((acumlador,valorAtual) => acumlador + valorAtual, 0)
+    return soma;
+```
+* ``` numeros.reduce; ``` executa a função de callback uma vez para cada elemento presente no array, excluindo furos (valores indefinidos)
+* ``` acumulador; ``` valor inicial (ou o valor do callback anterior)
+* ``` valorAtual; ``` o valor do elemento atual
+
+#### Exemplo de uso: 
+
+```javascript 
+let numeros = [15, 25, 35, 45, 55, 65];
+let soma = sumTwoNumbers(numeros);
+console.log(soma);
+```
+Chama a função sumTwoNumbers e imprimi a soma dos números do vetor numeros;
+
+Refêrencia MDN Web Docs
 ### 10 - Função de converter minutos para segundos
 
 ``` javascript 
@@ -171,6 +190,29 @@ console.log(minutesToSeconds(20) + ' segundos');
 Chama a função minutesToSeconds e imprime o valor já convertido de minutos para segundos. 
 
 ### 11 - Função média de um array
+
+```javascript
+function averageArray(numeros){
+    if (numeros.length === 0)
+        return 0
+        
+    let soma = 
+    numeros.reduce((acumulador,valorAtual) => acumulador + valorAtual, 0)
+    return soma / numeros.length
+    }
+```
+* ``` === 0;``` Operador de comparação, verefica se o valor é exatamente igual a 0;
+* ```numeros.reduce;``` É utlizado para reduzir um array a um único valor, aplicando uma função fornecida a um acumulador e a cada valor de array;
+* ```numeros.length;``` Retorna o número de elementos da array;
+
+#### Exemplo de uso:
+``` javascript
+let numeros = [25, 35, 45, 55, 65]
+let media = 0
+console.log(averageArray(numeros))
+```
+Chama a função averageArray e imprimi a média do vetor numero.
+
 ### 12 - Função ordem alfabética
 
 ```javascript 

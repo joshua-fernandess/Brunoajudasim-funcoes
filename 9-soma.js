@@ -10,10 +10,15 @@ Programa desenvolvido por:
 */
 
 function sumTwoNumbers(numeros){
-    let soma = numeros.reduce((acumlador,valorAtual) => acumlador + valorAtual, 0)
+    let soma = numeros.reduce((acumulador,valorAtual) => acumlador + valorAtual, 0)
     return soma;
 }
 
 let numeros = [15, 25, 35, 45, 55, 65];
 let soma = sumTwoNumbers(numeros);
 console.log(soma);
+
+//numeros.reduce; executa a função de callback uma vez para cada elemento presente no array, excluindo furos (valores indefinidos)
+//acumulador; valor inicial (ou o valor do callback anterior)
+//valorAtual; o valor do elemento atual
+//Refêrencia MDN Web Docs
