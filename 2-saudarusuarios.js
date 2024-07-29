@@ -10,17 +10,8 @@ Programa desenvolvido por:
 */
 
 function greetUsers(nomes){
-    return nomes.reduce((saudacao, nome, indice) => {
-        if (indice === 0) {
-            return `Olá, ${nome}`;
-        } else{
-            return `${saudacao}, ${nome}`
-        }
-    })
-
+    nomes.forEach(nome => {
+        console.log(`ola ${nome}`)        
+    });    
 }
-
-let nomes = ["Andressa", "Adriane", "Bruno", "Joshua"]
-let saudacao = greetUsers(nomes)
-
-console.log(saudacao)
+greetUsers(['bruno', 'okokok'])

@@ -13,3 +13,11 @@ Programa desenvolvido por:
  - Bruno
  - Joshua
 */
+
+function reverseString(palavra) {
+
+    return palavra.split('').reverse().join('')
+
+}
+
+console.log(reverseString('bom dia'))

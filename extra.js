@@ -16,7 +16,7 @@ Programa desenvolvido por:
 */
 
 function intersection(vetor1, vetor2) {
-    let array1 = new Set(vetor1)
+    let array1 = new Set (vetor1)
 
     let array2 = vetor2.filter(numero => array1.has(numero))
 
@@ -45,7 +45,7 @@ function getEvenNumbers(n) {
 }
 
 function drawEvenNumberTriangle(n) {
-    let pares = getEvenNumbers(n *(n + 1 ) / 2)
+    let pares = getEvenNumbers(n * (n + 1) / 2)
 
     let index = 0
 
