@@ -10,11 +10,11 @@ Programa desenvolvido por:
 */
 
 function sumTwoNumbers(numeros){
-    let soma = numeros.reduce((acumulador,valorAtual) => acumlador + valorAtual, 0)
+    let soma = numeros.reduce((acumulador,valorAtual) => acumulador + valorAtual, 0)
     return soma;
 }
 
-let numeros = [15, 25, 35, 45, 55, 65];
+let numeros = [15, 25];
 let soma = sumTwoNumbers(numeros);
 console.log(soma);
 
